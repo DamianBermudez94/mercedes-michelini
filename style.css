@@ -7,15 +7,41 @@
 #enviar-mail {
   opacity: 0;
 }
-.welcome_img {
+/*-- Seccion Welcome page--*/
+.section__welcome {
   width: 100%;
   height: 500px;
-  object-fit: cover;
+  background-image: url("./img/pexels-frans-van-heerden-1438832.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
+.container__welcome-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.title__welcome-page {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 38px;
+  padding: 20px;
+}
+.sub__title-welcome-page {
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+  padding: 20px;
+}
+
 /*--seccion alquileres - ventas - compra--*/
 .seccion-servicios {
   width: 100%;
-
   background-image: url("./img/pexels-graphicgumcom-1115804.jpg");
   background-position: center;
   background-size: cover;
@@ -195,7 +221,34 @@ p {
     max-width: none;
   }
 }
-
+/*-- Seccion comentarios--*/
+.seccion-comentarios {
+  background-color: #ebe5e5;
+  padding: 30px;
+}
+.container-comentarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.title-comentarios {
+  text-align: center;
+  font-size: 36px;
+}
+.box-comentarios {
+  height: 300px;
+  background-color: rgb(101, 22, 22);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.box-comentarios > p {
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
 /*--- Formulario ---*/
 
 .section-form {

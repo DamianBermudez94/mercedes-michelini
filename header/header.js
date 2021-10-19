@@ -6,8 +6,8 @@ function headertComponet(el) {
       <nav class="container__menu">
           <ul class="container__menu-link">
             <a href="index.html" class="link-menu selected">Inicio</a>
-            <a href="alquileres.html" class="link-menu">Alquileres</a>
-            <a href="ventas.html" class="link-menu">Ventas</a>
+            <a href="alquileres.html" class="link-menu">Alquiler</a>
+            <a href="ventas.html" class="link-menu">Venta</a>
             <a href="contacto.html" class="link-menu">Contacto</a>
           </ul>
       </nav>
