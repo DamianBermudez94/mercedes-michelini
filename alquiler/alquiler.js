@@ -2,19 +2,24 @@
 function addWords(params = {}) {
   // Primero, obtengo el template y el contenedor padre
   const templateEl = document.querySelector("#project-item-template");
-  const contenedorEl = document.querySelector(".portfolio-content");
+  const contenedorEl = document.querySelector(".alquiler-content");
+  console.log("soy el template", templateEl);
+  console.log("soy el contenedor", contenedorEl);
 
   // Empiezo a modificar los elementos del template: Agrego la imagen
   templateEl.content
-    .querySelector(".portfolio-img")
+    .querySelector(".alquiler-img")
     .setAttribute("src", params.imagen);
+  templateEl.content
+    .querySelector(".alquiler-img-dos")
+    .setAttribute("src", params.imagenes);
 
   // Agrego el nombre
-  templateEl.content.querySelector(".portfolio-card-title").textContent =
+  templateEl.content.querySelector(".alquiler-card-title").textContent =
     params.titulo;
 
   // Agrego la descripción
-  templateEl.content.querySelector(".portfolio-card-text").textContent =
+  templateEl.content.querySelector(".alquiler-card-text").textContent =
     params.descripcion;
 
   // Finalmente, agrego el link...
@@ -28,7 +33,7 @@ function addWords(params = {}) {
 // Función encargada de procesar los datos
 function getWords() {
   return fetch(
-    "https://cdn.contentful.com/spaces/wpnvcqocp561/environments/master/entries?access_token=WhXH2a8g41imwqtIhEOitV1f5CKzWtOApRefsya0R3E&content_type=portafolio"
+    "https://cdn.contentful.com/spaces/wpnvcqocp561/environments/master/entries?access_token=WhXH2a8g41imwqtIhEOitV1f5CKzWtOApRefsya0R3E&content_type=alquiler"
   )
     .then((resp) => {
       return resp.json();
@@ -41,6 +46,8 @@ function getWords() {
           descripcion: item.fields.descripcion,
           url: item.fields.url,
           imagen: item.fields.imagen.sys.id,
+          imagenes: item.fields.imagenes.sys.id,
+
           includes: data.includes.Asset,
         };
 
@@ -49,6 +56,10 @@ function getWords() {
 
       fieldsCollections.forEach((x) => {
         let idEncontrado = buscarAsset(x.imagen, x.includes);
+        let idEncontrados = buscarAsset(x.imagenes, x.includes);
+
+        console.log("Holaaa", idEncontrados);
+        x.imagenes = "https:" + idEncontrados.fields.file.url;
 
         x.imagen = "https:" + idEncontrado.fields.file.url;
       });
