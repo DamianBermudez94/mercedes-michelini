@@ -10,7 +10,7 @@
 /*-- Seccion Welcome page--*/
 .section__welcome {
   width: 100%;
-  height: 500px;
+  height: 700px;
   background-image: url("./img/pexels-frans-van-heerden-1438832.jpg");
   background-position: center;
   background-size: cover;
@@ -30,7 +30,7 @@
   text-align: center;
   color: #ffffff;
   font-size: 38px;
-  padding: 20px;
+  padding: 40px;
 }
 .sub__title-welcome-page {
   text-align: center;
@@ -262,10 +262,13 @@ p {
 
 .section-form {
   width: 100%;
+
   background-color: #f3ecec;
 }
 .contenedor-form {
   padding: 24px 0;
+  position: relative;
+  top: 30px;
 }
 .title-form {
   padding: 34px;
@@ -365,6 +368,11 @@ p {
   padding: 0;
 }
 @media (min-width: 960px) {
+  .contenedor-form {
+    padding: 24px 0;
+    position: relative;
+    top: 85px;
+  }
   .title-form {
     width: 100%;
     font-size: 39px;
@@ -374,7 +382,7 @@ p {
     padding: 10px;
   }
   .form {
-    width: 700px;
+    width: 600px;
     padding: 5px;
     margin: auto;
     max-height: 610px;

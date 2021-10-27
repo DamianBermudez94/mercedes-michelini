@@ -14,10 +14,16 @@
     <link rel="stylesheet" href="./header/header.css">
     <script defer src="./footer/footer.js"></script>
     <link rel="stylesheet" href="./footer/footer.css"> 
+    <script  defer src="./ultimas-novedades/ultimas-novedades.js"></script>
+    <link rel="stylesheet" href="./ultimas-novedades/ultimas-novedades.css">
     <link rel="stylesheet" href="style.css">
     <script async src="index.js"></script>
 </head>
 <body>
+    <!--Ir arriba-->
+    <div class="go-top">
+        <span><i class="fas fa-chevron-up"></i> <!--<a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>--></span>
+    </div>
     <header class="header">
 
     </header>
@@ -25,7 +31,7 @@
         <section class="section__welcome">
             <div class="container__welcome-page">
                 <h1 class="title__welcome-page">Alquiler y venta de casas</h1>
-                <p class="sub__title-welcome-page">Con mas de 10 años de experiencia en el mercado..</p>
+                <p class="sub__title-welcome-page">Con mas de 10 años de experiencia en el mercado.</p>
                 <div class="container-button">
                     <a class="botton-servicios" href="contacto.html">Mas información</a>
                 </div>
@@ -53,7 +59,7 @@
             <div class="container-servicios">
 
                 <div class="title-servicios">
-                    <h2 class="title-servicios">Nustros Servicios</h2>
+                    <h2 class="title-servicios">Nuestros Servicios</h2>
                 </div>
                 <div class="container__ventas-alquileres">
                     
@@ -82,7 +88,7 @@
 
             </div>
         </section>
-        <section class="seccion-propiedades">
+        <!--<section class="seccion-propiedades">
             <div class="container__propiedades-title">
                 <h2 class="title-propiedades">Propiedades destacadas</h2>
                 
@@ -126,12 +132,30 @@
                     <p>niet excepturi at cupiditate consequuntur corrupti aut voluptatibus sapiente?</p>
                 </div>
             </div>
+        </section>-->
+        <section class="seccion-novedades">
+            <h2 class="title__seccion-novedades">Ultimas novedades</h2>
+            <div class="novedades-content"></div>
         </section>
+        <template id="project-item-template">
+            <div class="novedades-cards">
+              
+                <img class="novedades-img" alt="image" />
+                <img class="novedades-img-dos" alt="image" />
+                <article class="novedades-info">
+                    <h3 class="novedades-card-title"></h3>
+                    <p class="novedades-card-text"></p>
+                    <a class="novedades-card-link" href="" target="_blank" >Mas informacion</a>
+                </article>
+            </div>
+           
+        </template>
+     
         <section class="seccion-comentarios">
             <h2 class="title-comentarios">Comentarios de nuestros clientes</h2>
             <div class="container-comentarios">
                 <div class="box-comentarios">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore, ex quasi possimus eligendi laudantium accusamus, repudiandae placeat dolor quibusdam vero fugiat earum nam, est reiciendis pariatur nemo quis neque.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, a.</p>
                 </div>
                 <div class="box-comentarios">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A neque ex velit sint laboriosam quae consequatur iusto nemo tempora facere recusandae, veniam, veritatis labore repellat illo dolores consectetur doloribus magnam!</p>

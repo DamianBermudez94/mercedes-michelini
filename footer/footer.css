@@ -6,11 +6,23 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 999999999999;
 }
 
+.box-contacto {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
 .img-title-footer {
-  padding: 20px;
   width: 300px;
+  padding: 30px;
+}
+.title-copy {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
 }
 .container__contacto-footer {
   display: flex;
@@ -20,14 +32,14 @@
 
 .footer__img-ubicacion,
 .footer__img-whatsapp,
-.footer__img-telefono,
 .footer__img-correo {
-  width: 60px;
-  padding: 15px;
+  width: 55px;
+  padding: 10px;
 }
 .box__contacto-footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 10px;
 }
@@ -35,15 +47,18 @@
   text-decoration: none;
   color: #fff;
 }
-.container__contacto-footer h4 {
-  font-size: 22px;
-  padding: 15px;
-}
+
 .container__contacto-footer p {
   width: 100%;
   font-size: 16px;
   padding: 0;
   color: #fff;
+}
+.footer-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*---Responsive Footer---*/
@@ -58,5 +73,8 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
+  }
+  .footer-text {
+    width: 100%;
   }
 }

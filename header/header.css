@@ -1,14 +1,56 @@
+/** Go top **/
+.go-top {
+  position: fixed;
+  bottom: 100px;
+  right: -100%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(255, 80, 80);
+  border-radius: 15px;
+  background: rgb(85, 85, 85, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 500ms;
+}
+.go-top:hover {
+  /*border: 2px solid #fff;*/
+  border-radius: 15px;
+  background: rgb(255, 80, 80, 0.5);
+}
+.go-top:hover span {
+  color: rgb(0, 0, 0);
+}
+.go-top > span {
+  font-size: 25px;
+  color: rgb(255, 85, 85);
+}
+
 .img-title {
   width: 250px;
 }
-.container__header {
+.container-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+}
+.container__header-menu {
   width: 100%;
   background-color: rgb(101, 22, 22);
   display: flex;
   justify-content: space-between;
   padding: 15px;
 }
-
+.container__contacto-header {
+  display: none;
+}
+.list-menu {
+  list-style: none;
+}
 .btn-menu {
   font-size: 32px;
   border: none;
@@ -18,7 +60,7 @@
 }
 .container__menu {
   position: absolute;
-  top: 60px;
+  top: 74px;
   left: -100%;
   width: 100%;
   height: calc(100vh - 60px);
@@ -35,8 +77,8 @@
 .link-menu {
   color: #fafafa;
   text-decoration: none;
-  font-size: 36px;
-  padding: 25px;
+  font-size: 28px;
+  padding: 10px;
 }
 .container__welcome {
   margin: 85px auto;
@@ -45,13 +87,50 @@
   flex-direction: column;
 }
 /*---Responsive menu---*/
+@media (min-width: 630px) {
+  .container__contacto-header {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 960px) {
-  .container__header {
-    padding: 20px;
-    height: 100px;
+  .container__contacto-header {
+    width: 100%;
+    background-color: rgb(90, 70, 70);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+  }
+  .header__img-whatsapp,
+  .header__img-correo {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+  .box__contacto-header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  .box__contacto-header {
+    display: flex;
+    align-items: center;
+  }
+  .header__text-whatsapp {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+
+    padding: 0;
+  }
+  .container__header-menu {
+    padding: 10px;
+    height: 70px;
   }
   .img-title {
-    width: 300px;
+    width: 200px;
   }
   .btn-menu {
     display: none;
@@ -61,8 +140,12 @@
     margin-left: 40px;
     cursor: pointer;
   }
+  .list-menu {
+    text-align: center;
+    cursor: pointer;
+  }
 
-  .container__header .container__menu {
+  .container__header-menu .container__menu {
     position: initial;
     top: 0;
     left: 0;
@@ -73,22 +156,25 @@
     margin: 0;
     padding: 0;
   }
-  .container__header .container__menu .container__menu-link {
+  .container__header-menu .container__menu .container__menu-link {
     display: flex;
     align-items: center;
-    flex-direction: initial;
+    flex-direction: row;
+    padding: 10px;
   }
 
-  .container__menu-link .link-menu {
-    font-size: 22px;
+  .container__menu .container__menu-link .list-menu .link-menu {
+    font-size: 18px;
     color: #fafafa;
     text-decoration: none;
     margin: 0;
     padding: 10px;
     font-family: "Open Sans", sans-serif;
     transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
   }
-  .container__menu-link .link-menu:hover {
+  .container__menu .container__menu-link .list-menu .link-menu:hover {
     background-color: #ffff;
     color: rgb(101, 22, 22);
     border-radius: 5px;

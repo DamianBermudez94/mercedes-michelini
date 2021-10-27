@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,17 +12,42 @@
    
     <script defer src="./header/header.js"></script>
     <link rel="stylesheet" href="./header/header.css">
+    <script defer src="./venta/venta.js"></script>
+    <link rel="stylesheet" href="./venta/venta.css">
     <script defer src="./footer/footer.js"></script>
     <link rel="stylesheet" href="./footer/footer.css"> 
     <link rel="stylesheet" href="style.css">
     <script async src="index.js"></script>
 </head>
 <body>
+      <!--Ir arriba-->
+      <div class="go-top">
+        <span><i class="fas fa-chevron-up"></i> <!--<a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>--></span>
+    </div>
     <header class="header">
 
     </header>
+    <main>
+        <section class="seccion-venta">
+            <h1 class="title-venta">Ventas.</h1>
+           
+            <div class="venta-content"></div>
+        </section>
+        <template id="project-item-template">
+            <div class="venta-cards">
+                <img class="venta-img" alt="Mercedes Michelini" />
+                <img class="venta-img-dos" alt="Mercedes Michelini" />
+                <article class="venta-info">
+                  
+                    <h3 class="venta-card-title"></h3>
+                    <p class="venta-card-text"></p>
+                    <a class="venta-card-link" href="" target="_blank" >Mas información</a>
+                </article>
+            </div>
+        </template>
+    </main>
     <footer class="footer">
-       
+      
     </footer>
 </body>
 </html>
