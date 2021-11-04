@@ -46,6 +46,7 @@
   padding: 15px;
 }
 .container__contacto-header {
+  width: 100%;
   display: none;
 }
 .list-menu {
@@ -59,6 +60,7 @@
   margin-left: 25px;
 }
 .container__menu {
+  width: 100%;
   position: absolute;
   top: 74px;
   left: -100%;
@@ -68,17 +70,23 @@
   color: #fafafa;
 }
 .container__menu-link {
-  padding: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: left;
   flex-direction: column;
 }
+.list-menu {
+  width: 100%;
+  border-bottom: 1px solid #fafafa;
+  text-align: center;
+  padding: 10px;
+}
 .link-menu {
+  width: 100%;
   color: #fafafa;
   text-decoration: none;
   font-size: 28px;
-  padding: 10px;
 }
 .container__welcome {
   margin: 85px auto;
@@ -140,9 +148,17 @@
     margin-left: 40px;
     cursor: pointer;
   }
-  .list-menu {
+  .link-menu {
     text-align: center;
     cursor: pointer;
+    border-bottom: none;
+    margin: 0;
+  }
+  .list-menu {
+    width: 100%;
+    border-bottom: none;
+    text-align: center;
+    padding: 0;
   }
 
   .container__header-menu .container__menu {

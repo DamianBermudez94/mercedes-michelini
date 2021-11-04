@@ -33,7 +33,7 @@ function addWords(params = {}) {
 // Función encargada de procesar los datos
 function getWords() {
   return fetch(
-    "https://cdn.contentful.com/spaces/wpnvcqocp561/environments/master/entries?access_token=WhXH2a8g41imwqtIhEOitV1f5CKzWtOApRefsya0R3E&content_type=alquiler"
+    "https://cdn.contentful.com/spaces/ip7fn0dyxbho/environments/master/entries?access_token=eapv_7lhVyKtpg4h20F_M2I18cwncppaG1g1hfeSsjo&content_type=alquiler"
   )
     .then((resp) => {
       return resp.json();
