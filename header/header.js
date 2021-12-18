@@ -9,7 +9,7 @@ function headertComponet(el) {
           </div>
           <div class="box__contacto-header">
             <img class="header__img-correo" src="./img/simbolo-de-correo-electronico-sobre-negro.png" alt="Mercedes Michelini">
-            <a href="mailto:info@mercedesmichelini.com" target="_blank">info@mercedesmichelini.com</a>
+            <a href="mailto:michelini.mercedes@gmail.com" target="_blank">michelini.mercedes@gmail.com</a>
           </div>
         </div>
         <div class="container__header-menu">   
@@ -77,7 +77,7 @@ function scrolTop() {
   let goTop = document.querySelector(".go-top");
   console.log("Holaa soy el buton", goTop);
   let prevScrollPos = window.pageYOffset;
-  window.onscroll = () => {
+  /* window.onscroll = () => {
     let currenScrolPos = window.pageYOffset;
     // Mostrar y ocultar menu
     if (prevScrollPos > currenScrolPos) {
@@ -100,7 +100,7 @@ function scrolTop() {
       goTop.style.right = "0";
       goTop.style.transition = "0.6s";
     }
-  };
+  };*/
 
   // Boton de arriba y abajo
 

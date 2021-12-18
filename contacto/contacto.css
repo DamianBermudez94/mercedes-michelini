@@ -1,15 +1,14 @@
 /*--- Formulario ---*/
-
-.section-form {
-  width: 100%;
-
-  background-color: #f3ecec;
+.contacto {
+  height: 800px;
 }
 .contenedor-form {
-  padding: 24px 0;
   position: relative;
-  top: 45px;
+  top: 150px;
+  left: 0;
+  padding: 10px;
   height: 800px;
+  background-color: #f3ecec;
 }
 .title-form {
   padding: 35px;
@@ -28,7 +27,7 @@
 
 .input {
   width: 100%;
-  min-width: 320px;
+  min-width: 290px;
   max-width: 320px;
   padding: 10px;
   margin: 5px;
@@ -46,7 +45,7 @@
   width: 100%;
   font-size: 16px;
   padding: 15px;
-  min-width: 320px;
+  min-width: 290px;
   max-width: 320px;
   max-height: 250px;
   min-height: 250px;
@@ -63,7 +62,7 @@
 }
 .btn-enviar {
   width: 100%;
-  min-width: 320px;
+  min-width: 290px;
   max-width: 320px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -109,23 +108,19 @@
   padding: 0;
 }
 @media (min-width: 960px) {
+  .contacto {
+    height: 700px;
+  }
   .contenedor-form {
-    padding: 24px 0;
-    position: relative;
-    top: 85px;
     height: 800px;
+    top: 119px;
   }
-  .form {
-    padding: 5px;
-  }
+
   .title-form {
     width: 100%;
     font-size: 39px;
   }
 
-  .section-form {
-    padding: 10px;
-  }
   .form {
     width: 600px;
     padding: 5px;

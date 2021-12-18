@@ -8,7 +8,7 @@ function enviarFormulario() {
     const form = new FormData(this);
     $buttonEnviar.setAttribute(
       "href",
-      `mailto:bermudezdamian7@gmail.com?subject= Nombre:${form.get(
+      `mailto:michelini.mercedes@gmail.com?subject= Nombre:${form.get(
         "name"
       )} Email:${form.get("mail")} Telefono:${form.get(
         "phone"
